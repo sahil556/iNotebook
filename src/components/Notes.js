@@ -44,9 +44,9 @@ const Notes = (props) => {
 
     return (
         <>
-        <Alert alert={alert}/>
+        
         <div className='container'>
-            <AddNote/>
+        <Alert alert={alert}/>
             <button ref={ref} type="button" className="btn btn-primary d-none" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Launch demo modal
             </button>
@@ -84,7 +84,7 @@ const Notes = (props) => {
             </div>
 
             <div className="container row my-3">
-                <h2>You Notes</h2>
+                <h2 style={{fontWeight: "bold" }}>You Notes</h2>
                 <div className="container mx-2"> 
                 {notes.length===0 && 'No notes to display'}
                 </div>
