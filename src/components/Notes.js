@@ -2,7 +2,6 @@ import React, { useContext, useEffect, useRef, useState } from 'react'
 import { AlertContext } from '../context/AlertContext';
 import noteContext from "../context/notes/noteContext"
 import Noteitem from './Noteitem';
-import AddNote from './AddNote';
 import { useNavigate } from 'react-router-dom';
 import Alert from './Alert';
 
